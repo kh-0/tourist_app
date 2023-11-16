@@ -28,7 +28,7 @@ class _signUpState extends State<signUp> {
     if (passwordConfirm()) //{
 
       try {
-        await FirebaseAuth.instance.createUserWithEmailAndPassword(
+         await FirebaseAuth.instance.createUserWithEmailAndPassword(
           email: _emailController.text.trim(),
           password: _epasswordlController.text.trim(),
         );
